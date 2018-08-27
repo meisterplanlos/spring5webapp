@@ -29,7 +29,6 @@ public class BookController
   public String getBooks(Model model)
   {
     model.addAttribute("books", this.bookRepository.findAll());
-
     return "books";
   }
 }
